@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8BC34A"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#8BC34A"
+        android:text="Witamy !"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnGPS"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.038" />
+
+    <Button
+        android:id="@+id/btnAccelerometer"
+        android:layout_width="212dp"
+        android:layout_height="45dp"
+        android:text="Akcelerometr"
+        app:layout_constraintBottom_toTopOf="@+id/btnGyroscpoe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLight"
+        app:layout_constraintVertical_bias="0.688" />
+
+    <Button
+        android:id="@+id/btnGPS"
+        android:layout_width="212dp"
+        android:layout_height="45dp"
+        android:text="GPS"
+        app:layout_constraintBottom_toTopOf="@+id/btnLight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.556" />
+
+    <Button
+        android:id="@+id/btnLight"
+        android:layout_width="212dp"
+        android:layout_height="45dp"
+        android:text="Czujnik Światła"
+        app:layout_constraintBottom_toTopOf="@+id/btnAccelerometer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGPS"
+        app:layout_constraintVertical_bias="0.622" />
+
+    <Button
+        android:id="@+id/btnGyroscpoe"
+        android:layout_width="212dp"
+        android:layout_height="45dp"
+        android:text="Żyroskop"
+        app:layout_constraintBottom_toTopOf="@+id/btnGauge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAccelerometer"
+        app:layout_constraintVertical_bias="0.756" />
+
+    <Button
+        android:id="@+id/btnGauge"
+        android:layout_width="212dp"
+        android:layout_height="45dp"
+        android:text="Czujnik Ciśnienia"
+        app:layout_constraintBottom_toTopOf="@+id/btnMagnetometer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGyroscpoe"
+        app:layout_constraintVertical_bias="0.822" />
+
+    <Button
+        android:id="@+id/btnMagnetometer"
+        android:layout_width="212dp"
+        android:layout_height="45dp"
+        android:text="Kompas"
+        app:layout_constraintBottom_toTopOf="@+id/btnProximity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGauge"
+        app:layout_constraintVertical_bias="0.887" />
+
+    <Button
+        android:id="@+id/btnProximity"
+        android:layout_width="212dp"
+        android:layout_height="45dp"
+        android:text="Czujnik Zbliżeniowy"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMagnetometer"
+        app:layout_constraintVertical_bias="0.953" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
